@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_interstitial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.staffonechristian.monetize.InterstitialActivity">
+
+    <Button
+        android:text="Load Interstitial"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:onClick="LoadInterstitialEvent"
+        android:id="@+id/loadButton" />
+
+    <Button
+        android:text="Interstitial Not Ready"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadButton"
+        android:layout_alignEnd="@+id/loadButton"
+        android:layout_marginTop="23dp"
+        android:onClick="ShowAd"
+        android:id="@+id/showButton" />
+</LinearLayout>
