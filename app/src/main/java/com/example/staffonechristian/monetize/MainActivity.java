@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         adView.setAdListener(new ToastAdListener(this));
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
+        //Branch1
     }
 
     public void OpenNewActivity(View view) {
